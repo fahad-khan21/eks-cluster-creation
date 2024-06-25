@@ -9,5 +9,5 @@ subjects:
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: full_access
+  name: cr_full_access
   apiGroup: rbac.authorization.k8s.io
