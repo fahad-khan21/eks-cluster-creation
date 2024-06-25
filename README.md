@@ -34,7 +34,7 @@ kubectl create deploy nginx --image=nginx -n rbac-test
 kubectl get all -n rbac-test
 
 ## Create IAM user and create access key - this can also be done through UI
-aws iam create-user --user-name rbac-user
+aws iam create-user --user-name rbac-user 
 aws iam create-access-key --user-name rbac-user
 
 ## We will use these above creds to log in to the other user account.
