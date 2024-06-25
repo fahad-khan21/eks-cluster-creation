@@ -22,7 +22,7 @@ kubectl get pods --all-namespaces
 eksctl delete cluster --name eksrbac --region us-east-1
 
 
-#################### EKS Cluster RBACs #############################################################################
+#################### EKS Cluster RBACs ###################################
 
 ## first create the rbac-test namespace, and then install nginx into it
 kubectl create namespace rbac-test
