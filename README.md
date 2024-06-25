@@ -9,6 +9,9 @@ https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 ## Create EKS cluster
 eksctl create cluster --name eksrbac --node-type t2.medium --nodes 1 --nodes-min 1 --nodes-max 2 --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1c
 
+## Let your kubectl connect to eks cluster
+aws eks update-kubeconfig --name eksrbac --region us-east-1
+
 ## Get EKS Cluster service
 eksctl get cluster --name eksrbac --region us-east-1
 
